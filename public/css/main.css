@@ -1,0 +1,22 @@
+@Font-face {
+    font-family: 'Neo Sans';
+    src: url(/fonts/neo_sans_sv/NeoSansStd-Regular.otf?#iefix);
+}
+
+* {
+    font-family: 'Neo Sans';
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    font-size: .7rem;
+}

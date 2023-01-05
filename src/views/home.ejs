@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partials/head.ejs") %>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/slider.js"></script>
+        <title>Terpo</title>
+</head>
+
+<body>
+    <%- include("./partials/header.ejs") %>
+
+        <section class="slider" aria-label="Slider principal">
+            <div class="showSlider fade slide1">
+                <img src="/img/apache-3-usv-gnss-imu-single-bim-marine-drone-chcnav.png" alt="Barcos USV">
+                <div class="contentBook">
+                    <p class="novedad-slide">NOVEDAD</p>
+                    <p class="titulo-slide">Buque no tripulado (USV)</p>
+                    <p class="subtitulo-slide">Conozca los aspectos más destacados del nuevo servicio de BATIMETRÍA!</p>
+                    <p class="info-slide"> ↠Relevamiento de sistemas lagunares <br>
+                        ↠Diagnóstico de la zona Anaerobia <br>
+                        ↠Prevención de desequilibrios irreversibles <br>
+                        ↠Monitoreo de espejos de agua
+                    </p>
+                </div>
+            </div>
+            <div class="showSlider fade slide3">
+                <img src="/img/apache-3-usv-gnss-imu-single-bim-marine-drone-chcnav.png" alt="Barcos USV">
+                <div class="contentBook">
+                    <p class="novedad-slide">NOVEDAD</p>
+                    <p class="titulo-slide">Monitoreo batimétrico con barcos no tripulados (USV)</p>
+                    <p class="subtitulo-slide">Agrimensura e Ingeniería</p>
+                    <p class="info-slide"> Único en la provincia de Buenos Aires!</p>
+                </div>
+            </div>
+            <div class="showSlider fade slide2">
+                <img src="/img/apache-3-usv-gnss-imu-single-bim-marine-drone-chcnav.png" alt="Barcos USV">
+                <div class="contentBook">
+                    <p class="novedad-slide">NOVEDAD</p>
+                    <p class="titulo-slide">Buque no tripulado (USV)</p>
+                    <p class="subtitulo-slide">Conozca los aspectos más destacados de este servicio!</p>
+                    <p class="info-slide"> Ecosonda de haz simple para estudios batimétricos de lagos, ríos interiores y
+                        zonas costeras.
+                    </p>
+                </div>
+            </div>
+
+            <a class="left">❮</a>
+            <a class="right">❯</a>
+        </section>
+
+        <%- include("./partials/footer.ejs") %>
+</body>
+
+</html>
