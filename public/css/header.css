@@ -39,14 +39,17 @@ header {
     padding: 2px 8px;
     color: #f7f7f7;
     background-color: rgb(10, 9, 9);
-    border-radius: 15%;
+    border-radius: 5%;
     border: 1px outset transparent;
     cursor: pointer;
     transition: border 300ms;
 }
 
-.idioma:focus {
+.idioma:hover {
     border: 1px outset #CDFE4A;
+}
+
+.idioma:focus {
     outline: none;
 }
 
@@ -139,6 +142,10 @@ header {
     border: none;
 }
 
+.hide-desktop, .hide-mobile {
+    display: none;
+}
+
 #p-servicios {
     margin: 0;
 }
@@ -170,10 +177,12 @@ header {
 .menu-drop {
     width: 100%;
     background-color: #f7f7f7;
-    padding-left: 48%;
+    padding-left: 49%;
+    padding-right: 49%;
 }
 
 .drop-down-m {
+    cursor: pointer;
     transition: all .3s ease;
 }
 
@@ -184,4 +193,124 @@ header {
 
 .drop-down-s {
     transform: rotate(0deg);
+}
+
+@media screen and (min-width: 620px) {
+    header {
+        flex-direction: row;
+    }
+
+    .cont-header-1 {
+        justify-content: flex-end;
+    }
+
+    .redes {
+        width: 30%;
+    }
+
+    .red-header {
+        width: 1.5rem;
+    }
+
+    .cuenta,
+    .idioma {
+        margin: 0 1em;
+        cursor: pointer;
+    }
+
+    .cont-header-2 {
+        height: 90px;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #333333;
+        color: #CDFE4A;
+    }
+
+    .logo-header {
+        width: 20%;
+        align-self: flex-start;
+    }
+
+    .nav {
+        width: 70%;
+        margin-top: 1em;
+    }
+
+    .nav li {
+        cursor: pointer;
+    }
+
+    .lista-nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .lista-nav li {
+        width: 20%;
+        border: none;
+        text-align: center;
+        padding: 1em 0 0 0;
+    }
+
+    .lista-nav li.servicios {
+        display: list-item;
+        border-top: .2em outset transparent;
+        padding-top: .8em;
+    }
+
+    .lista-nav li.servicios.add-border {
+        border-color: #CDFE4A;
+    }
+
+    .drop-servicios {
+        display: none;
+    }
+
+    .d-servicios {
+        width: 100%;
+        background-color: #f7f7f7;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        list-style: none;
+        padding: 1rem;
+        margin-top: 0;
+    }
+
+    .d-servicios li {
+        margin-left: 1em;
+    }
+
+    .menu-drop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+    font-size: 1rem;
+    }
+
+    .nav {
+        margin-top: 0;
+    }
+
+    .lista-nav {
+        margin-top: 0;
+    }
+
+    .d-servicios {
+        font-size: .7rem;
+        margin-bottom: 0;
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .logo-header {
+        width: 15%;
+    }
 }

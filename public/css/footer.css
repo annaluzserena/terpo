@@ -34,6 +34,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 1em;
 }
 
 .redes-footer a {
@@ -47,4 +48,19 @@ footer {
 .footer-fijo {
     border-top: 2px outset #A4A4A4;
     padding: .5em 1em;
+}
+
+@media screen and (min-width: 620px) {
+
+    .hide-container {
+        font-size: 1rem;
+    }
+
+    .logo-footer {
+        width: 20%;
+    }
+
+    .redes-footer {
+        width: 40%;
+    }
 }
