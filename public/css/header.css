@@ -74,11 +74,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all .3s linear;
 }
 
 .cont-header-2.fixed {
+    overflow: hidden;
     position: fixed;
     top: 0;
+    z-index: 99;
 }
 
 .logo-header {
@@ -94,7 +97,7 @@ header {
     align-self: flex-start;
     width: 100%;
     overflow: hidden;
-    transition: all .3s ease;
+    transition: all .3s ease-in;
 }
 
 .lista-nav {
@@ -106,12 +109,15 @@ header {
     justify-content: center;
     align-items: center;
     padding-left: 3rem;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 
 .lista-nav.folded {
     max-height: 0;
     margin: 0;
+    max-width: 0;
+    padding: 0;
+    color: transparent;
 }
 
 .lista-nav.unfolded {
@@ -177,12 +183,16 @@ header {
 .menu-drop {
     width: 100%;
     background-color: #f7f7f7;
-    padding-left: 49%;
-    padding-right: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
 
 .drop-down-m {
     cursor: pointer;
+    width: .8rem;
     transition: all .3s ease;
 }
 
@@ -281,7 +291,7 @@ header {
     }
 
     .d-servicios li {
-        margin-left: 1em;
+        margin-left: .5em;
     }
 
     .menu-drop {

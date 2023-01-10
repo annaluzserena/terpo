@@ -30,6 +30,12 @@ window.addEventListener("load", function () {
             fixedHeader.classList.remove("fixed");
         };*/
 
+        if (currentScroll > lastScroll && !fixedHeader.classList.contains("fixed")) {
+            fixedHeader.classList.add("fixed");
+        } else if (currentScroll < lastScroll && fixedHeader.classList.contains("fixed")) {
+            fixedHeader.classList.remove("fixed");
+        };
+
         if (window.innerWidth < "620" && currentScroll > lastScroll && !listaNav.classList.contains("folded")) {
             listaNav.classList.remove("unfolded");
             listaNav.classList.add("folded");
