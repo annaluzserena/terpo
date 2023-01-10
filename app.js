@@ -10,8 +10,8 @@ app.set('views', './src/views');
 
 const mainRoutes = require("./src/routes/main");
 
-app.listen(process.env.PORT || 3030, () => {
-    console.log("Servidor corriendo en el puerto 3030");
+app.listen(process.env.PORT || 8080, () => {
+    console.log("Servidor corriendo en el puerto 8080");
 });
 
 app.use('/', mainRoutes);
